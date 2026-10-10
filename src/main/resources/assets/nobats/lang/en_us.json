@@ -1,0 +1,4 @@
+{
+  "nobats.configuration.remove_bats": "Remove bats",
+  "nobats.configuration.remove_existing_bats": "Remove bats that are already in the world"
+}

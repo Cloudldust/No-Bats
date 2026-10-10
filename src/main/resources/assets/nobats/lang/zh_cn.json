@@ -1,0 +1,4 @@
+{
+  "nobats.configuration.remove_bats": "禁止生成蝙蝠",
+  "nobats.configuration.remove_existing_bats": "清除世界中已存在的蝙蝠"
+}

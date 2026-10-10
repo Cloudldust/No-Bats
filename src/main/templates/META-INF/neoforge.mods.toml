@@ -1,0 +1,32 @@
+# Values in this file are expanded by the generateModMetadata task in build.gradle.
+# Keep the placeholder names in sync with the replaceProperties map in that task.
+modLoader="javafml" #mandatory
+loaderVersion="${loader_version_range}" #mandatory
+license="${mod_license}"
+
+# A URL to refer people to when problems occur with this mod.
+#issueTrackerURL="https://github.com/<you>/<repo>/issues" #optional
+
+[[mods]] #mandatory
+modId="${mod_id}" #mandatory
+version="${mod_version}" #mandatory
+displayName="${mod_name}" #mandatory
+authors="${mod_authors}"
+logoFile="nobats.png"
+# A URL for the "homepage" for this mod, displayed in the mod UI.
+#displayURL="https://modrinth.com/mod/nobats" #optional
+description='''${mod_description}'''
+
+[[dependencies.${mod_id}]] #optional
+    modId="neoforge" #mandatory
+    type="required" #mandatory
+    versionRange="${neo_version_range}" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
